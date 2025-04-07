@@ -9,6 +9,8 @@ def postas_hitratacion(mapa_carrera):
         distancia_actual = mapa_carrera[i][1] - mapa_carrera[ultima_posta][1]
         
         if distancia_actual > 7:
+            if ultima_posta == 0 and mapa_carrera[i - 1][1] > 7:
+                postas_hitratacion.append(mapa_carrera[ultima_posta])
             postas_hitratacion.append(mapa_carrera[i - 1])
             ultima_posta = i - 1
     if mapa_carrera[cantidad_postas - 1][1] - mapa_carrera[ultima_posta][1] > 7:
