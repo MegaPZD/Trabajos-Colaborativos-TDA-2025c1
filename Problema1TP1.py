@@ -1,6 +1,6 @@
 def postas_hitratacion(mapa_carrera):
 
-    mapa_carrera.sort(key=lambda ciudad: ciudad[1])
+    mapa_carrera.sort(key=lambda posta: posta[1])
     postas_hitratacion = []
     ultima_posta = 0
     cantidad_postas = len(mapa_carrera)
