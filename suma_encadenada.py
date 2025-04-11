@@ -35,7 +35,7 @@ def suma_encadenada_minima(n):
         return [1]
     
     n_aux = n
-    while n_aux % 2 == 0:
+    while n_aux % 2 == 0 and n_aux > 2:
         n_aux //= 2
     
     t1 = time()
