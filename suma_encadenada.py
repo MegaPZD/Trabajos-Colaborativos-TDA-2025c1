@@ -1,16 +1,8 @@
 from time import time
 
-def es_primo(n):
-    i = 3
-    while i * i <= n:
-        if n % i == 0:
-            return False
-        i += 2
-    
-    return True
-
 def backtracking(n, par, opt):
     if len(opt) > 0 and len(par) >= len(opt):
+        print(par)
         return
     
     if par[-1] == n:
@@ -18,42 +10,51 @@ def backtracking(n, par, opt):
         opt.extend(par)
         return
     
+    nums_utilizados = set()
+    
     for i in range((len(par) - 1) , -1, -1):
+        if par[i] + par[i] <= par[-1]:
+            continue
+
         for j in range(i, -1, -1):
             nuevo_valor = par[i] + par[j]
-
-            if nuevo_valor > n or nuevo_valor <= par[-1]:
+            
+            if nuevo_valor > n or nuevo_valor <= par[-1] or nuevo_valor in nums_utilizados:
                 continue
 
             par.append(nuevo_valor)
             backtracking(n, par, opt)
             par.pop()
 
+            nums_utilizados.add(nuevo_valor)
+
             
 def suma_encadenada_minima(n):
     if n == 1:
         return [1]
     
+    t1 = time()
+    sol = []
     n_aux = n
+    
     while n_aux % 2 == 0 and n_aux > 2:
         n_aux //= 2
     
-    t1 = time()
-    sol = []
-
-# Esto todavia hay que checkear si es cierto
-    if es_primo(n_aux):
+    if n_aux >= 100 and n_aux % 2 > 0:
         sol = suma_encadenada_minima(n_aux - 1)
         sol.append(n_aux)
-    else:
-        backtracking(n_aux, [1,2], sol)
+        print("Aproximacion de la solucion: ", sol)
+
+    print("Buscando una solucion:")
+    backtracking(n_aux, [1, 2], sol)
 
     while sol[-1] < n:
         sol.append(sol[-1] + sol[-1])
-    
+    print("Solucion encontrada: ", sol, " para n = ", n_aux)
+            
     t2 = time()
     print(f"Execution time: {t2 - t1} seconds")
     
     return sol
 
-print(suma_encadenada_minima(188))
+print(suma_encadenada_minima(149))
