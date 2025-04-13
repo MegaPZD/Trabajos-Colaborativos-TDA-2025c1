@@ -56,7 +56,7 @@ n_optimo = {
     53: 9,
     54: 8,
     55: 9,
-    56: 9,
+    56: 8,
     57: 9,
     58: 9,
     59: 9,
@@ -155,6 +155,7 @@ for i in range (3, 149):
     resultado = suma_encadenada_minima(i)
     if len(resultado) != n_optimo[i]:
         print(f"en la suma encadenada {resultado} no se encontro el optimo suma minima de: {n_optimo[i]} elementos")
+        error = True
         break
 if not error:
     print("coinciden todos los optimos")
