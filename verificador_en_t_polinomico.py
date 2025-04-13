@@ -151,10 +151,23 @@ n_optimo = {
     148: 10,
 }
 error = False
+
+def error_en_sumable(resultado_obtenido, n):
+    if resultado_obtenido[-1] != n:
+        return True
+    for i in range((len(resultado_obtenido) - 2), -1, -1):
+        if not any(resultado_obtenido[i] + resultado_obtenido[j] == resultado_obtenido[i+1] for j in range(i, -1, -1)):
+            return True
+    return False
+
 for i in range (3, 149):
     resultado = suma_encadenada_minima(i)
     if len(resultado) != n_optimo[i]:
         print(f"en la suma encadenada {resultado} no se encontro el optimo suma minima de: {n_optimo[i]} elementos")
+        error = True
+        break
+    if error_en_sumable(resultado, i):
+        print(f"en la suma encadenada {resultado} no es capaz de hacer la suma encadenada para {i}")
         error = True
         break
 if not error:
