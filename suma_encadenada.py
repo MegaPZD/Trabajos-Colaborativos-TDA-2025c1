@@ -1,8 +1,8 @@
 from time import time
 
 def backtracking(n, par, opt):
+
     if len(opt) > 0 and len(par) >= len(opt):
-        print(par)
         return
     
     if par[-1] == n:
@@ -18,6 +18,10 @@ def backtracking(n, par, opt):
 
         for j in range(i, -1, -1):
             nuevo_valor = par[i] + par[j]
+
+            if len(opt) > 0 and opt[len(par)] / nuevo_valor > 4:
+                #print("Solucion no valida ", n)
+                continue
             
             if nuevo_valor > n or nuevo_valor <= par[-1] or nuevo_valor in nums_utilizados:
                 continue
@@ -50,11 +54,11 @@ def suma_encadenada_minima(n):
 
     while sol[-1] < n:
         sol.append(sol[-1] + sol[-1])
-    print("Solucion encontrada: ", sol, " para n = ", n_aux)
+    print("Solucion encontrada: ", sol, " para n = ", n)
             
     t2 = time()
     print(f"Execution time: {t2 - t1} seconds")
     
     return sol
 
-print(suma_encadenada_minima(149))
+print(suma_encadenada_minima(379))
