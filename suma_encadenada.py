@@ -1,6 +1,16 @@
 from time import time
 
+def calcular_posibles_pasos(n, ult_elem):
+    pasos = 0
+    i = ult_elem
+    while i < n:
+        pasos += 1
+        i += i
+    return pasos
+
 def backtracking(n, par, opt):
+    if len(opt) > 0 and calcular_posibles_pasos(n, par[-1]) + len(par) >= len(opt):
+        return
 
     if len(opt) > 0 and len(par) >= len(opt):
         return
@@ -18,11 +28,7 @@ def backtracking(n, par, opt):
 
         for j in range(i, -1, -1):
             nuevo_valor = par[i] + par[j]
-
-            if len(opt) > 0 and opt[len(par)] / nuevo_valor > 4:
-                #print("Solucion no valida ", n)
-                continue
-            
+ 
             if nuevo_valor > n or nuevo_valor <= par[-1] or nuevo_valor in nums_utilizados:
                 continue
 
@@ -61,4 +67,4 @@ def suma_encadenada_minima(n):
     
     return sol
 
-print(suma_encadenada_minima(379))
+print(suma_encadenada_minima(20000))
