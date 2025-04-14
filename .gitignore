@@ -1,1 +1,4 @@
 __pycache__/Problema1TP1.cpython-312.pyc
+.venv/
+.gitignore
+__pycache__/

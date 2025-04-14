@@ -67,4 +67,4 @@ def suma_encadenada_minima(n):
     
     return sol
 
-print(suma_encadenada_minima(20000))
+print(suma_encadenada_minima(4483))
