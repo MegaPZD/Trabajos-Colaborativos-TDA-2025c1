@@ -1,0 +1,77 @@
+Instrucciones de compilado:
+
+En el comando de ejecucion se debe escribir:
+- Python3 en Windows
+- python3 en Lynux
+En el documento se usara la versión para Windows
+para la ejemplificación. 
+
+Se deben tener descargadas las siguientes librerias:
+- Time
+- random
+
+Problema 1:
+
+fuerza_cargas.py:
+
+Codigo fuente para el problema 1 utilizando D&V.
+Calcula la fuerza para una particula j en una serie de
+particulas x distantes.
+Se debe ejecutar el siguiente comando para su ejecución:
+
+Python3 fuerza_cargas.py
+
+generador_cargas_aleatorias.py
+
+Genera n particulas aleatoriamente siendo n de a , luego eligue
+al azar una de esas particulas para calcular la fuerza
+que ejercen las demas particulas.
+
+Se debe ejecutar el siguiente comando para su ejecución:
+
+Python3 generador_cargas_aleatorias.py
+
+Problema 2:
+
+problema2TP1.py
+
+El codigo fuente del problema que resuelve el problema 2 con codigo
+Greedy.
+Se debe ejecutar el siguiente comando para su ejecución:
+
+Python3 problema2TP1.py
+
+generador_carreras.py
+
+Genera carreras aleatorias de 10 a 50 postas, con distancias entre si de
+7 kilometros o menos.
+Se debe ejecutar el siguiente comando para su ejecución:
+
+Python3 generador_carreras.py
+
+Problema 3:
+
+suma_encadenada.py
+
+El codigo fuente del problema que resuelve el problema 3 mediante
+backtraking.
+Se debe ejecutar el siguiente comando para su ejecución:
+
+Python3 suma_encadenada.py
+
+generador_sumas.py
+
+El codigo que dado un numero entre  y  y para ese numero se realiza
+la suma encadenada.
+Se debe ejecutar el siguiente comando para su ejecución:
+
+Python3 generador_suma.py
+
+verificador_en_t_polinomico.py
+
+Verifica que para los n de 3 a 500 las soluciones encontradas
+para el problema 3 son las optimas.
+Se debe ejecutar el siguiente comando para su ejecución:
+
+Python3 verificador_en_t_polinomico.py
+
