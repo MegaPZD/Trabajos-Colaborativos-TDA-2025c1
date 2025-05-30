@@ -1,11 +1,3 @@
-"""resultado  = antenas_mediante_flujo(5, [ 
-    [0, 3, 4, 4, 3],
-    [3, 0, 3, 3, 7],
-    [4, 3, 0, 4, 3],
-    [4, 3, 4, 0, 3],
-    [3, 7, 3, 3, 0]
-], 2, 2, 4)"""
-
 import antenas
 import random
 import sys
