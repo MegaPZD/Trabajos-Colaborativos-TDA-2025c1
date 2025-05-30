@@ -1,5 +1,4 @@
 import networkx as nx
-import string
 
 def antenas_mediante_flujo(antenas : int, matriz_distancias, k, b, D):
 
@@ -51,5 +50,4 @@ def antenas_mediante_flujo(antenas : int, matriz_distancias, k, b, D):
         }
         diccionario_resultante[clave] = usados
 
-    #print(flujo_maximo)
     return diccionario_resultante
