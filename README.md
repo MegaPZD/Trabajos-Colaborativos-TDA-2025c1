@@ -24,7 +24,7 @@ Puedes instalar `networkx` usando `pip`:
 
 ```bash
 pip install networkx
-
+```
 ## Intrucciones de compilado
 
 # antenas.py
@@ -33,10 +33,10 @@ Es el codigo fuente, para su compilado se debe ejecutar el siguiente comando
 
 ```bash Windows
 Python3 antenas.py
-
+```
 ```bash Lynux
 python3 antenas.py
-
+```
 # antenasAleatorias.py
 
 Es el generador de instancias aleatorias del problema 3.
@@ -45,16 +45,16 @@ Tiene 2 maneras de compilarse:
 
 ```bash Windows
 Python3 antenasAleatorias.py
-
+```
 ```bash Lynux
 python3 antenasAleatorias.py
-
+```
 De este modo se utilizara una seed aleatoria para generar n, k, b, D y la matriz de distancia correspondiente.
 
 ```bash Windows
 Python3 antenasAleatorias.py <seed>
-
+```
 ```bash Lynux
 python3 antenasAleatorias.py <seed>
-
+```
 De este modo se puede usar una seed determinada para repitir las condicciones de experimentación
