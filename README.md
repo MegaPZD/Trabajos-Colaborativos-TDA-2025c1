@@ -62,4 +62,4 @@ Lynux
 ```bash Lynux
 python3 antenasAleatorias.py <seed>
 ```
-Donde <seed> es una set determinada (int). De este modo se puede usar una seed ya usada para repitir las condicciones de experimentación.
+Donde seed es una seed determinada (int). De este modo se puede usar una seed ya usada para repitir las condicciones de experimentación.
