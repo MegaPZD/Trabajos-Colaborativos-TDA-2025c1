@@ -53,27 +53,3 @@ def antenas_mediante_flujo(antenas : int, matriz_distancias, k, b, D):
 
     #print(flujo_maximo)
     return diccionario_resultante
-
-"""resultado  = antenas_mediante_flujo(5, [ 
-    [0, 3, 4, 4, 3],
-    [3, 0, 3, 3, 7],
-    [4, 3, 0, 4, 3],
-    [4, 3, 4, 0, 3],
-    [3, 7, 3, 3, 0]
-], 2, 2, 4)"""
-
-"""resultado  = antenas_mediante_flujo(10, [
-    [0, 3, 4, 4, 8,8,10,8,15,8],
-    [3, 0, 3, 3, 7,7,9,7,14,5],
-    [4, 3, 0, 4, 4, 8,6,4,11,4],
-    [4, 3, 4, 0, 4, 4, 8, 8, 11, 8],
-    [8, 7, 4, 4, 0, 4, 4, 8, 7, 8],
-    [8,7,8,4,4,0,8,12,9,12],
-    [10,9,6,6,4,8,0,4,5,6],
-    [8,7,4,8,8,12,4,0,7,4],
-    [15,14,11,11,7,9,5,7,0,11],
-    [8,5,4,8,8,12,6,4,1,0]
-], 3, 3, 9)"""
-
-#for clave, valor in resultado.items():
-#    print(f"{clave}: {valor}")
