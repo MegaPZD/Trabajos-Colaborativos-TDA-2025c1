@@ -1,5 +1,7 @@
 # Trabajo Practico numero 2
 ## Problema 1
+Para probar este algoritmo hay que utilizar la función prueba_palindromo({path del set de datos})
+Se ofrece un set de palabras para probar el algoritmo, cada una con su respectivo resultado. Dicho set es el que se llama "set_palindromos.txt". De querer probar un set de datos propio revisar el formato del archivo anteriormente mencionado para el correcto funcionamiento del algoritmo de prueba.
 
 ## Problema 2
 
