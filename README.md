@@ -140,7 +140,7 @@ El archivo.txt debera tener el nombre de set_palindromos.txt, deberá estar cont
 
 Su formato deberá ser el siguiente:
 
-<palabra> <numero de palindromos esperado> \n
+palabra numero_de_palindromos_esperado(int) \n
 
 # Problema 2
 
