@@ -42,7 +42,8 @@ pip install pulp
 # palindromo.py
 
 Es el codigo fuente del problema 2. Su compilado no retornará nada, utilizar prueba_palindromos.py para la ejecucion de varios palindromos.
-Para su cumpilado se debe ejecutar el siguiente comando:
+
+Para su compilado se debe ejecutar el siguiente comando:
 
 Windows:
 ```bash Windows
@@ -56,7 +57,8 @@ python3 palindromo.py
 # prueba_palindromo.py
 
 Ejecuta los set de datos de set_palindromos.txt.
-Para su cumpilado se debe ejecutar el siguiente comando:
+
+Para su compilado se debe ejecutar el siguiente comando:
 
 Windows:
 ```bash Windows
@@ -69,7 +71,7 @@ python3 prueba_palindromo.py
 
 # concesiones.py
 
-Es el código fuente del Problema 2, para su cumpilado se debe ejecutar el siguiente comando:
+Es el código fuente del Problema 2, para su compilado se debe ejecutar el siguiente comando:
 
 Windows:
 ```bash Windows
@@ -134,6 +136,8 @@ set_palindromos.txt: tiene 50 palabras adjuntas con sus palindromos minimos. Est
 # ¿Como crear un set de datos propio para testeo?
 
 El archivo.txt debera tener el nombre de set_palindromos.txt, deberá estar contenido en la misma carpeta que prueba_palindromos.py.
+
+
 Su formato deberá ser el siguiente:
 
 <palabra> <numero de palindromos esperado> \n
