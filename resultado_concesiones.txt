@@ -1,0 +1,12 @@
+Estado de la solucion: Optimal
+Beneficio total optimo: $255000.0
+
+Clientes seleccionados:
+Cliente_A = 1
+Cliente_B_primera_oferta = 1
+Cliente_B_segunda_oferta = 0
+Cliente_C = 1
+Cliente_D = 0
+Cliente_E = 1
+Cliente_F = 0
+Cliente_G = 0

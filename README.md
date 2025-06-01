@@ -5,6 +5,8 @@ Se ofrece un set de palabras para probar el algoritmo, cada una con su respectiv
 
 ## Problema 2
 
+Este algoritmo utiliza programación lineal para maximizar el beneficio total eligiendo las ofertas convenientes para lograr ese beneficio máximo pero respetando una serie de restricciones. El resultado final y sus especificaciones será guardado en el archivo ```resultado_concesiones.txt```. 
+
 ## Problema 3
 
 Este algoritmo utiliza redes de flujo para determinar si es posible asignar backups a un conjunto de antenas respetando restricciones de distancia máxima, número de backups y reutilización máxima de cada antena como backup.
@@ -15,10 +17,11 @@ Este algoritmo utiliza redes de flujo para determinar si es posible asignar back
 
 ## 📦 Bibliotecas requeridas
 
-Para ejecutar el algoritmo se debe contar con las siguientes bibliotecas instaladas:
+Para ejecutar los algoritmos se debe contar con las siguientes bibliotecas instaladas:
 
 - `networkx` (para trabajar con grafos y flujos)
 - `time` y `random` (incluidas por defecto en Python)
+- `pulp` (para trabajar con programación lineal)
 
 ### Instalación de dependencias
 
@@ -27,11 +30,31 @@ Puedes instalar `networkx` usando `pip`:
 ```bash
 pip install networkx
 ```
+
+Puedes instalar `pulp` usando `pip`:
+
+```bash
+pip install pulp
+```
+
 ## Intrucciones de compilado
+
+# concesiones.py
+
+Es el código fuente del Problema 2, para su cumpilado se debe ejecutar el siguiente comando:
+
+Windows:
+```bash Windows
+Python3 concesiones.py
+```
+Lynux
+```bash Lynux
+python3 concesiones.py
+```
 
 # antenas.py
 
-Es el codigo fuente, para su compilado se debe ejecutar el siguiente comando:
+Es el código fuente del Problema 3, para su compilado se debe ejecutar el siguiente comando:
 
 Windows:
 ```bash Windows
