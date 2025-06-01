@@ -39,6 +39,34 @@ pip install pulp
 
 ## Intrucciones de compilado
 
+# palindromo.py
+
+Es el codigo fuente del problema 2. Su compilado no retornará nada, utilizar prueba_palindromos.py para la ejecucion de varios palindromos.
+Para su cumpilado se debe ejecutar el siguiente comando:
+
+Windows:
+```bash Windows
+Python3 palindromo.py
+```
+Lynux
+```bash Lynux
+python3 palindromo.py
+```
+
+# prueba_palindromo.py
+
+Ejecuta los set de datos de set_palindromos.txt.
+Para su cumpilado se debe ejecutar el siguiente comando:
+
+Windows:
+```bash Windows
+Python3 prueba_palindromo.py
+```
+Lynux
+```bash Lynux
+python3 prueba_palindromo.py
+```
+
 # concesiones.py
 
 Es el código fuente del Problema 2, para su cumpilado se debe ejecutar el siguiente comando:
@@ -54,7 +82,8 @@ python3 concesiones.py
 
 # antenas.py
 
-Es el código fuente del Problema 3, para su compilado se debe ejecutar el siguiente comando:
+Es el código fuente del Problema 3. Su compilado no retornará nada, utilizar antenasAleatorias.py para la ejecucion de instacias aleatorias del problema de las antenas.
+Para su compilado se debe ejecutar el siguiente comando:
 
 Windows:
 ```bash Windows
@@ -95,3 +124,24 @@ Lynux
 ```bash Lynux
 python3 antenasAleatorias.py <seed>
 ```
+
+## Set de datos
+
+# Problema 1
+
+set_palindromos.txt: tiene 50 palabras adjuntas con sus palindromos minimos. Este archivo se utiliza prueba_palindromos.py, el cual resuelve las palabras planteadas.
+
+# ¿Como crear un set de datos propio para testeo?
+
+El archivo.txt debera tener el nombre de set_palindromos.txt, deberá estar contenido en la misma carpeta que prueba_palindromos.py.
+Su formato deberá ser el siguiente:
+
+<palabra> <numero de palindromos esperado> \n
+
+# Problema 2
+
+Se plantea el modelo solo para resolver el problema planteado en el enunciado.
+
+# Problema 3
+
+antenasAleatorias.py se encarga crear un set de datos aleatoriamente y mostrarlo por pantalla. La variación de n, k, b y D esta hecha para que se generen n backup de k longitud o en su defecto que indique que no existe una solución posible (y porque no es posible).
