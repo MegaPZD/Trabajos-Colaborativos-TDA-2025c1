@@ -70,6 +70,10 @@ Es el generador de instancias aleatorias del problema 3.
 Utiliza el codigo fuente para la resolución de instancias.
 Tiene 2 maneras de compilarse:
 
+
+1- De este modo se utilizara una seed aleatoria para generar n, k, b, D y la matriz de distancia correspondiente.
+
+
 Windows
 ```bash Windows
 Python3 antenasAleatorias.py
@@ -78,7 +82,11 @@ Lynux
 ```bash Lynux
 python3 antenasAleatorias.py
 ```
-De este modo se utilizara una seed aleatoria para generar n, k, b, D y la matriz de distancia correspondiente.
+
+
+2- Donde seed es una seed determinada (int). De este modo se puede usar una seed ya usada para repitir las condicciones de experimentación.
+
+
 Windows
 ```bash Windows
 Python3 antenasAleatorias.py <seed>
@@ -87,4 +95,3 @@ Lynux
 ```bash Lynux
 python3 antenasAleatorias.py <seed>
 ```
-Donde seed es una seed determinada (int). De este modo se puede usar una seed ya usada para repitir las condicciones de experimentación.
