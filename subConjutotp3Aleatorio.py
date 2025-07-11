@@ -68,6 +68,13 @@ def setDatos(usando_seed=False, seed=(-1)):
 
     print(f"Tiempo que tomo resolverlo con aproximacion: {final-inicio}\nS: {S}")
 
+    print(f"{sum(S)} >= {(sum(S_opt))//2}")
+    
+    if sum(S) >= (sum(S_opt))//2:
+        print("Se cumplio la condicion pedida por el enunciado")
+    else:
+        print("No se cumplio la condicion pedida por el enunciado")
+
     print(f"Usando seed: {seed}")
 
 if __name__ == "__main__":
