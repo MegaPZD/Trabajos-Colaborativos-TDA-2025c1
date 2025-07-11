@@ -5,11 +5,11 @@ obteniendo una solucion aproximada al "Problema del subconjunto factible"
 
 ## Problema 2
 
-Este algoritmo utiliza programación lineal para maximizar el beneficio total eligiendo las ofertas convenientes para lograr ese beneficio máximo pero respetando una serie de restricciones. El resultado final y sus especificaciones será guardado en el archivo ```resultado_concesiones.txt```. 
+Se debe desarrollar un algoritmo el cual dado un sitio de subastas con un único producto y n compradores que hacen sus ofertas en orden aleatorio, el vendedor debe decidir en tiempo real si acepta o rechaza cada oferta.
 
 ## Problema 3
 
-Este algoritmo utiliza redes de flujo para determinar si es posible asignar backups a un conjunto de antenas respetando restricciones de distancia máxima, número de backups y reutilización máxima de cada antena como backup.
+Se pide describir formalmente un autómata finito determinístico para cada uno de los 2 lenguajes simples descritos en el enunciado
 
 ## Lenguaje de programación
 
