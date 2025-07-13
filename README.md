@@ -41,7 +41,7 @@ python3 subConjuntotp3.py
 
 # subConjuntotp3Aleatorio.py
 
-Es el generador de instancias aleatorias del problema 3.
+Es el generador de instancias aleatorias del problema 1.
 Utiliza el codigo fuente para la resolución de instancias.
 Tiene 2 maneras de compilarse:
 
@@ -82,17 +82,34 @@ Lynux
 python3 ofertas.py
 ```
 
-# ofertas_aleatorio.py
+# ofertasAleatorias.py
 
-Muestra graficamente el rendimiento temporal del algortimo para 19 tamaños de ofertas (de 100 a 10000, con saltos de 500) con unas ofertas mezcladas de forma aleatoria con la seed predeterminada: 42. Para modificar los resultados se deberá modificar manualmente la seed utilizada.
+Es el generador de instancias aleatorias del problema 2.
+Utiliza el codigo fuente para la resolución de instancias. Muestra la cantidad de ofertas, la seleccionada, la verdaderamente mejor y el tiempo que tardo en ejecutarse.
+Tiene 2 maneras de compilarse:
+
+
+1- De este modo se utilizara una seed aleatoria para generar la mezclas de ofertas.
+
 
 Windows:
 ```bash Windows
-Python3 ofertas_aleatorio.py
+Python3 ofertasAleatorias.py
 ```
 Lynux
 ```bash Lynux
-python3 ofertas_aleatorio.py
+python3 ofertasAleatorias.py
+```
+
+2- Donde seed es una seed determinada (int). De este modo se puede usar una seed ya usada para repitir las condicciones de experimentación.
+
+Windows:
+```bash Windows
+Python3 ofertasAleatorias.py <seed>
+```
+Lynux
+```bash Lynux
+python3 ofertasAleatorias.py <seed>
 ```
 
 ## Set de datos
@@ -102,5 +119,7 @@ python3 ofertas_aleatorio.py
 subConjuntotp3Aleatorio.py se encarga crear un set de datos aleatoriamente y mostrar A, B, Sopt, S, si se cumplio la cota y la seed usada por pantalla.
 
 # Problema 2
+
+ofertasAleatorias.py se encarga crear un set de datos aleatoriamente y mostrar por pantalla la seed usada, la cantidad de ofertas, la seleccionada, la verdaderamente mejor y el tiempo que tardo en ejecutarse.
 
 
