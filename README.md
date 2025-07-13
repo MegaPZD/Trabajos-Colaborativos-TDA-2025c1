@@ -19,7 +19,7 @@ Se pide describir formalmente un autómata finito determinístico para cada uno 
 
 Para ejecutar los algoritmos se debe contar con las siguientes bibliotecas:
 
-- `time` , `sys` y `random` (incluidas por defecto en Python)
+- `time` , `sys`, `math` y `random` (incluidas por defecto en Python)
 
 ## Intrucciones de compilado
 
@@ -69,6 +69,31 @@ Lynux
 python3 subConjuntotp3Aleatorio.py <seed>
 ```
 
+# ofertas.py
+
+Es el codigo fuente del problema 2.  Su compilado no retornará nada, utilizar ofertas_aleatorio.py para observar su funcionamiento.
+
+Windows:
+```bash Windows
+Python3 ofertas.py
+```
+Lynux
+```bash Lynux
+python3 ofertas.py
+```
+
+# ofertas_aleatorio.py
+
+Muestra graficamente el rendimiento temporal del algortimo para 19 tamaños de ofertas (de 100 a 10000, con saltos de 500) con unas ofertas mezcladas de forma aleatoria con la seed predeterminada: 42. Para modificar los resultados se deberá modificar manualmente la seed utilizada.
+
+Windows:
+```bash Windows
+Python3 ofertas_aleatorio.py
+```
+Lynux
+```bash Lynux
+python3 ofertas_aleatorio.py
+```
 
 ## Set de datos
 
